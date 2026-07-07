@@ -141,12 +141,6 @@
       border:1px solid var(--border);
     }
     .btn-wide{ width:100%; }
-    .btn-mail{
-      background:#111;
-      color:#fff;
-      width:100%;
-      margin-top:14px;
-    }
 
     .hero{
       margin-top:20px;
@@ -514,6 +508,33 @@
       color:#fff;
       flex:0 0 auto;
     }
+    .download-item.locked{
+      opacity:.55;
+      cursor:not-allowed;
+      background:#f1f2f4;
+    }
+    .download-item.locked:hover{
+      transform:none;
+      background:#f1f2f4;
+    }
+    .download-item.locked .download-arrow{
+      background:#d1d5db;
+      color:#6b7280;
+    }
+    .download-item.unlocked{
+      border-color:#b7d7c1;
+      background:#f4fbf6;
+    }
+    .download-status{
+      margin-top:12px;
+      padding:12px 14px;
+      border-radius:16px;
+      background:#f1f2f4;
+      border:1px solid var(--border);
+      color:#4b5563;
+      font-size:13px;
+      line-height:1.45;
+    }
 
     .verify-box{
       display:none;
@@ -712,7 +733,7 @@
             </p>
             <div class="hero-actions">
               <a class="btn btn-dark" href="#proceso">Ver proceso</a>
-              <a class="btn btn-light" href="#formatos">Descargar formatos</a>
+              <a class="btn btn-light" href="#verificar">Verificar avance para descargar</a>
             </div>
           </div>
         </div>
@@ -846,31 +867,35 @@
             <div class="card-title">
               <div>
                 <h2>Descarga de formatos</h2>
-                <p>Documentos requeridos para el proceso.</p>
+                <p>Disponibles solo si el ID consultado cumple mínimo 60% de avance.</p>
               </div>
             </div>
 
-            <div class="download-list">
-              <a class="download-item" href="formatos/aceptacion_practicas.doc" download>
+            <div class="download-status" id="downloadStatus">
+              Para descargar los formatos, primero verifica tu porcentaje de avance de carrera. Si cumples con el 60%, se activarán los botones de descarga.
+            </div>
+
+            <div class="download-list" style="margin-top:12px;">
+              <a class="download-item locked" data-file="formatos/aceptacion_practicas.doc" data-filename="aceptacion_practicas.doc" aria-disabled="true" role="button" tabindex="0">
                 <span class="download-meta">
                   <span class="icon" aria-hidden="true">DOC</span>
                   <span><strong>Aceptación de Prácticas</strong><span>Primer formato</span></span>
                 </span>
-                <span class="download-arrow" aria-hidden="true">↓</span>
+                <span class="download-arrow" aria-hidden="true">🔒</span>
               </a>
-              <a class="download-item" href="formatos/reporte_actividades.doc" download>
+              <a class="download-item locked" data-file="formatos/reporte_actividades.doc" data-filename="reporte_actividades.doc" aria-disabled="true" role="button" tabindex="0">
                 <span class="download-meta">
                   <span class="icon" aria-hidden="true">DOC</span>
                   <span><strong>Reporte de Actividades</strong><span>50% y 100%</span></span>
                 </span>
-                <span class="download-arrow" aria-hidden="true">↓</span>
+                <span class="download-arrow" aria-hidden="true">🔒</span>
               </a>
-              <a class="download-item" href="formatos/evaluacion_actividades.doc" download>
+              <a class="download-item locked" data-file="formatos/evaluacion_actividades.doc" data-filename="evaluacion_actividades.doc" aria-disabled="true" role="button" tabindex="0">
                 <span class="download-meta">
                   <span class="icon" aria-hidden="true">DOC</span>
                   <span><strong>Evaluación de Actividades</strong><span>50% y 100%</span></span>
                 </span>
-                <span class="download-arrow" aria-hidden="true">↓</span>
+                <span class="download-arrow" aria-hidden="true">🔒</span>
               </a>
             </div>
           </section>
@@ -982,9 +1007,6 @@
             <span class="small-icon" aria-hidden="true">☎</span>
             <span>8332302550 ext. 2235</span>
           </div>
-          <a class="btn btn-mail" href="mailto:alexandro.barron@iest.edu.mx?subject=Duda%20sobre%20Pr%C3%A1cticas%20Profesionales%20ISND&body=Hola%2C%20tengo%20una%20duda%20sobre%20mis%20pr%C3%A1cticas%20profesionales.%0A%0AID%3A%0ANombre%3A%0AEmpresa%3A%0AActividades%20propuestas%3A">
-            Enviar mensaje por correo
-          </a>
         </article>
       </section>
     </main>
@@ -1023,10 +1045,12 @@
     async function buscarAlumno(){
       const id = document.getElementById("studentId").value.trim();
       if(!id){
+        bloquearFormatos("Ingresa tu ID y consulta tu avance para habilitar la descarga de formatos.");
         setResult("warn", "Ingresa un ID para realizar la consulta.");
         return;
       }
 
+      bloquearFormatos("Consultando avance. Los formatos se habilitarán únicamente si cumples con el 60%.");
       setResult("info", "Consultando base de datos...");
 
       try{
@@ -1038,6 +1062,7 @@
         const alumno = alumnos.find(item => String(item.id).trim() === id);
 
         if(!alumno){
+          bloquearFormatos("No se encontró el ID. Las descargas permanecen bloqueadas.");
           setResult("warn", `No se encontró información para el ID <strong>${id}</strong>. Verifica que esté escrito correctamente.`);
           return;
         }
@@ -1046,25 +1071,79 @@
         const cumple = avance >= 60;
 
         if(cumple){
+          desbloquearFormatos(alumno.id, avance);
           setResult("ok", `
             <strong>ID ${alumno.id}</strong><br>
             Avance de carrera: <strong>${formatPercent(avance)}</strong><br>
-            Sí cumple con el requisito académico mínimo del 60%. Debe solicitar autorización del coordinador y tener inscrita la materia de Prácticas Profesionales.
+            Sí cumple con el requisito académico mínimo del 60%. Los formatos ya están habilitados para descarga.
           `);
         } else {
+          bloquearFormatos(`ID ${alumno.id}: avance ${formatPercent(avance)}. No cumple con el 60%; las descargas permanecen bloqueadas.`);
           setResult("no", `
             <strong>ID ${alumno.id}</strong><br>
             Avance de carrera: <strong>${formatPercent(avance)}</strong><br>
-            Aún no cumple con el requisito académico mínimo del 60% para iniciar prácticas profesionales.
+            Aún no cumple con el requisito académico mínimo del 60%. Los formatos no están disponibles para descarga.
           `);
         }
       } catch(error){
+        bloquearFormatos("No se pudo cargar la base de datos. Las descargas permanecen bloqueadas.");
         setResult("no", `
           No se pudo cargar la base de datos <strong>${DATA_URL}</strong>.<br>
           Verifica que la carpeta <strong>data</strong> esté en el repositorio y que el archivo se llame <strong>alumnos.json</strong>.
         `);
       }
     }
+
+    function bloquearFormatos(mensaje){
+      const status = document.getElementById("downloadStatus");
+      if(status){ status.textContent = mensaje || "Verifica tu avance para habilitar descargas."; }
+      document.querySelectorAll(".download-item").forEach(item => {
+        item.classList.add("locked");
+        item.classList.remove("unlocked");
+        item.removeAttribute("href");
+        item.removeAttribute("download");
+        item.setAttribute("aria-disabled", "true");
+        const arrow = item.querySelector(".download-arrow");
+        if(arrow) arrow.textContent = "🔒";
+      });
+    }
+
+    function desbloquearFormatos(id, avance){
+      const status = document.getElementById("downloadStatus");
+      if(status){
+        status.innerHTML = `ID <strong>${id}</strong> verificado con <strong>${formatPercent(avance)}</strong> de avance. Descargas habilitadas.`;
+      }
+      document.querySelectorAll(".download-item").forEach(item => {
+        const file = item.dataset.file;
+        const filename = item.dataset.filename || "formato.doc";
+        item.classList.remove("locked");
+        item.classList.add("unlocked");
+        item.setAttribute("href", file);
+        item.setAttribute("download", filename);
+        item.setAttribute("aria-disabled", "false");
+        const arrow = item.querySelector(".download-arrow");
+        if(arrow) arrow.textContent = "↓";
+      });
+    }
+
+    document.querySelectorAll(".download-item").forEach(item => {
+      item.addEventListener("click", function(event){
+        if(item.classList.contains("locked")){
+          event.preventDefault();
+          toggleVerifier(true);
+          bloquearFormatos("Primero verifica tu ID. Solo los alumnos con mínimo 60% de avance pueden descargar los formatos.");
+          setResult("warn", "Para descargar formatos, primero consulta tu ID y confirma que cumples con el 60% de avance.");
+        }
+      });
+      item.addEventListener("keydown", function(event){
+        if((event.key === "Enter" || event.key === " ") && item.classList.contains("locked")){
+          event.preventDefault();
+          item.click();
+        }
+      });
+    });
+
+    bloquearFormatos("Para descargar los formatos, primero verifica tu porcentaje de avance de carrera. Si cumples con el 60%, se activarán los botones de descarga.");
 
     document.getElementById("studentId").addEventListener("keydown", function(event){
       if(event.key === "Enter"){
