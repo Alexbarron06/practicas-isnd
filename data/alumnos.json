@@ -1,0 +1,712 @@
+[
+  {
+    "id": "22627",
+    "avance": 100.0,
+    "cumple_60": true
+  },
+  {
+    "id": "19334",
+    "avance": 97.73,
+    "cumple_60": true
+  },
+  {
+    "id": "22180",
+    "avance": 97.73,
+    "cumple_60": true
+  },
+  {
+    "id": "22698",
+    "avance": 96.21,
+    "cumple_60": true
+  },
+  {
+    "id": "22658",
+    "avance": 95.45,
+    "cumple_60": true
+  },
+  {
+    "id": "20106",
+    "avance": 94.7,
+    "cumple_60": true
+  },
+  {
+    "id": "20135",
+    "avance": 94.7,
+    "cumple_60": true
+  },
+  {
+    "id": "22515",
+    "avance": 92.42,
+    "cumple_60": true
+  },
+  {
+    "id": "21465",
+    "avance": 92.17,
+    "cumple_60": true
+  },
+  {
+    "id": "22498",
+    "avance": 91.92,
+    "cumple_60": true
+  },
+  {
+    "id": "20906",
+    "avance": 91.16,
+    "cumple_60": true
+  },
+  {
+    "id": "22769",
+    "avance": 90.15,
+    "cumple_60": true
+  },
+  {
+    "id": "20161",
+    "avance": 89.65,
+    "cumple_60": true
+  },
+  {
+    "id": "23414",
+    "avance": 89.65,
+    "cumple_60": true
+  },
+  {
+    "id": "23477",
+    "avance": 89.65,
+    "cumple_60": true
+  },
+  {
+    "id": "20057",
+    "avance": 88.13,
+    "cumple_60": true
+  },
+  {
+    "id": "20803",
+    "avance": 88.13,
+    "cumple_60": true
+  },
+  {
+    "id": "20976",
+    "avance": 88.13,
+    "cumple_60": true
+  },
+  {
+    "id": "23150",
+    "avance": 88.13,
+    "cumple_60": true
+  },
+  {
+    "id": "23461",
+    "avance": 88.13,
+    "cumple_60": true
+  },
+  {
+    "id": "23487",
+    "avance": 88.13,
+    "cumple_60": true
+  },
+  {
+    "id": "23492",
+    "avance": 88.13,
+    "cumple_60": true
+  },
+  {
+    "id": "23569",
+    "avance": 88.13,
+    "cumple_60": true
+  },
+  {
+    "id": "20087",
+    "avance": 87.37,
+    "cumple_60": true
+  },
+  {
+    "id": "20866",
+    "avance": 87.37,
+    "cumple_60": true
+  },
+  {
+    "id": "23388",
+    "avance": 87.37,
+    "cumple_60": true
+  },
+  {
+    "id": "23389",
+    "avance": 87.37,
+    "cumple_60": true
+  },
+  {
+    "id": "20959",
+    "avance": 87.12,
+    "cumple_60": true
+  },
+  {
+    "id": "21364",
+    "avance": 86.62,
+    "cumple_60": true
+  },
+  {
+    "id": "23289",
+    "avance": 86.62,
+    "cumple_60": true
+  },
+  {
+    "id": "23534",
+    "avance": 86.62,
+    "cumple_60": true
+  },
+  {
+    "id": "20829",
+    "avance": 85.86,
+    "cumple_60": true
+  },
+  {
+    "id": "20945",
+    "avance": 85.86,
+    "cumple_60": true
+  },
+  {
+    "id": "20190",
+    "avance": 83.59,
+    "cumple_60": true
+  },
+  {
+    "id": "20941",
+    "avance": 82.07,
+    "cumple_60": true
+  },
+  {
+    "id": "23526",
+    "avance": 82.07,
+    "cumple_60": true
+  },
+  {
+    "id": "20927",
+    "avance": 81.31,
+    "cumple_60": true
+  },
+  {
+    "id": "20769",
+    "avance": 80.3,
+    "cumple_60": true
+  },
+  {
+    "id": "23453",
+    "avance": 79.8,
+    "cumple_60": true
+  },
+  {
+    "id": "20091",
+    "avance": 78.03,
+    "cumple_60": true
+  },
+  {
+    "id": "20804",
+    "avance": 76.01,
+    "cumple_60": true
+  },
+  {
+    "id": "23985",
+    "avance": 74.24,
+    "cumple_60": true
+  },
+  {
+    "id": "24224",
+    "avance": 73.74,
+    "cumple_60": true
+  },
+  {
+    "id": "23963",
+    "avance": 72.98,
+    "cumple_60": true
+  },
+  {
+    "id": "19573",
+    "avance": 72.22,
+    "cumple_60": true
+  },
+  {
+    "id": "20059",
+    "avance": 71.21,
+    "cumple_60": true
+  },
+  {
+    "id": "21651",
+    "avance": 70.71,
+    "cumple_60": true
+  },
+  {
+    "id": "24375",
+    "avance": 67.68,
+    "cumple_60": true
+  },
+  {
+    "id": "21746",
+    "avance": 66.92,
+    "cumple_60": true
+  },
+  {
+    "id": "23768",
+    "avance": 66.92,
+    "cumple_60": true
+  },
+  {
+    "id": "21589",
+    "avance": 65.4,
+    "cumple_60": true
+  },
+  {
+    "id": "21715",
+    "avance": 65.4,
+    "cumple_60": true
+  },
+  {
+    "id": "21762",
+    "avance": 65.4,
+    "cumple_60": true
+  },
+  {
+    "id": "23431",
+    "avance": 65.4,
+    "cumple_60": true
+  },
+  {
+    "id": "23886",
+    "avance": 65.4,
+    "cumple_60": true
+  },
+  {
+    "id": "23899",
+    "avance": 65.4,
+    "cumple_60": true
+  },
+  {
+    "id": "23907",
+    "avance": 65.4,
+    "cumple_60": true
+  },
+  {
+    "id": "23940",
+    "avance": 65.4,
+    "cumple_60": true
+  },
+  {
+    "id": "24042",
+    "avance": 65.4,
+    "cumple_60": true
+  },
+  {
+    "id": "24297",
+    "avance": 65.4,
+    "cumple_60": true
+  },
+  {
+    "id": "21826",
+    "avance": 64.65,
+    "cumple_60": true
+  },
+  {
+    "id": "22038",
+    "avance": 64.65,
+    "cumple_60": true
+  },
+  {
+    "id": "23869",
+    "avance": 64.65,
+    "cumple_60": true
+  },
+  {
+    "id": "23992",
+    "avance": 64.65,
+    "cumple_60": true
+  },
+  {
+    "id": "24065",
+    "avance": 63.89,
+    "cumple_60": true
+  },
+  {
+    "id": "24138",
+    "avance": 63.89,
+    "cumple_60": true
+  },
+  {
+    "id": "24274",
+    "avance": 63.89,
+    "cumple_60": true
+  },
+  {
+    "id": "24392",
+    "avance": 63.89,
+    "cumple_60": true
+  },
+  {
+    "id": "21797",
+    "avance": 63.13,
+    "cumple_60": true
+  },
+  {
+    "id": "22009",
+    "avance": 62.37,
+    "cumple_60": true
+  },
+  {
+    "id": "24021",
+    "avance": 62.37,
+    "cumple_60": true
+  },
+  {
+    "id": "21614",
+    "avance": 60.1,
+    "cumple_60": true
+  },
+  {
+    "id": "24169",
+    "avance": 60.1,
+    "cumple_60": true
+  },
+  {
+    "id": "21808",
+    "avance": 59.09,
+    "cumple_60": false
+  },
+  {
+    "id": "24171",
+    "avance": 57.83,
+    "cumple_60": false
+  },
+  {
+    "id": "24393",
+    "avance": 57.83,
+    "cumple_60": false
+  },
+  {
+    "id": "22041",
+    "avance": 56.31,
+    "cumple_60": false
+  },
+  {
+    "id": "24272",
+    "avance": 56.06,
+    "cumple_60": false
+  },
+  {
+    "id": "24407",
+    "avance": 53.54,
+    "cumple_60": false
+  },
+  {
+    "id": "21659",
+    "avance": 50.0,
+    "cumple_60": false
+  },
+  {
+    "id": "22745",
+    "avance": 48.48,
+    "cumple_60": false
+  },
+  {
+    "id": "24383",
+    "avance": 47.73,
+    "cumple_60": false
+  },
+  {
+    "id": "24881",
+    "avance": 43.94,
+    "cumple_60": false
+  },
+  {
+    "id": "24832",
+    "avance": 43.18,
+    "cumple_60": false
+  },
+  {
+    "id": "25105",
+    "avance": 43.18,
+    "cumple_60": false
+  },
+  {
+    "id": "22543",
+    "avance": 41.67,
+    "cumple_60": false
+  },
+  {
+    "id": "22567",
+    "avance": 41.67,
+    "cumple_60": false
+  },
+  {
+    "id": "22671",
+    "avance": 41.67,
+    "cumple_60": false
+  },
+  {
+    "id": "24663",
+    "avance": 41.67,
+    "cumple_60": false
+  },
+  {
+    "id": "24721",
+    "avance": 41.67,
+    "cumple_60": false
+  },
+  {
+    "id": "24740",
+    "avance": 41.67,
+    "cumple_60": false
+  },
+  {
+    "id": "24846",
+    "avance": 41.67,
+    "cumple_60": false
+  },
+  {
+    "id": "24855",
+    "avance": 41.67,
+    "cumple_60": false
+  },
+  {
+    "id": "24955",
+    "avance": 41.67,
+    "cumple_60": false
+  },
+  {
+    "id": "24982",
+    "avance": 41.67,
+    "cumple_60": false
+  },
+  {
+    "id": "25005",
+    "avance": 41.67,
+    "cumple_60": false
+  },
+  {
+    "id": "25018",
+    "avance": 41.67,
+    "cumple_60": false
+  },
+  {
+    "id": "25076",
+    "avance": 41.67,
+    "cumple_60": false
+  },
+  {
+    "id": "25078",
+    "avance": 41.67,
+    "cumple_60": false
+  },
+  {
+    "id": "25114",
+    "avance": 41.67,
+    "cumple_60": false
+  },
+  {
+    "id": "25160",
+    "avance": 41.67,
+    "cumple_60": false
+  },
+  {
+    "id": "25172",
+    "avance": 41.67,
+    "cumple_60": false
+  },
+  {
+    "id": "22609",
+    "avance": 40.91,
+    "cumple_60": false
+  },
+  {
+    "id": "25216",
+    "avance": 40.91,
+    "cumple_60": false
+  },
+  {
+    "id": "22483",
+    "avance": 40.15,
+    "cumple_60": false
+  },
+  {
+    "id": "22629",
+    "avance": 40.15,
+    "cumple_60": false
+  },
+  {
+    "id": "24822",
+    "avance": 40.15,
+    "cumple_60": false
+  },
+  {
+    "id": "24967",
+    "avance": 40.15,
+    "cumple_60": false
+  },
+  {
+    "id": "25065",
+    "avance": 40.15,
+    "cumple_60": false
+  },
+  {
+    "id": "25090",
+    "avance": 39.14,
+    "cumple_60": false
+  },
+  {
+    "id": "24987",
+    "avance": 37.12,
+    "cumple_60": false
+  },
+  {
+    "id": "25280",
+    "avance": 26.26,
+    "cumple_60": false
+  },
+  {
+    "id": "25472",
+    "avance": 21.72,
+    "cumple_60": false
+  },
+  {
+    "id": "26019",
+    "avance": 20.96,
+    "cumple_60": false
+  },
+  {
+    "id": "23394",
+    "avance": 20.2,
+    "cumple_60": false
+  },
+  {
+    "id": "23409",
+    "avance": 20.2,
+    "cumple_60": false
+  },
+  {
+    "id": "25337",
+    "avance": 20.2,
+    "cumple_60": false
+  },
+  {
+    "id": "25355",
+    "avance": 20.2,
+    "cumple_60": false
+  },
+  {
+    "id": "25360",
+    "avance": 20.2,
+    "cumple_60": false
+  },
+  {
+    "id": "25420",
+    "avance": 20.2,
+    "cumple_60": false
+  },
+  {
+    "id": "25479",
+    "avance": 20.2,
+    "cumple_60": false
+  },
+  {
+    "id": "25608",
+    "avance": 20.2,
+    "cumple_60": false
+  },
+  {
+    "id": "25644",
+    "avance": 20.2,
+    "cumple_60": false
+  },
+  {
+    "id": "25702",
+    "avance": 20.2,
+    "cumple_60": false
+  },
+  {
+    "id": "25752",
+    "avance": 20.2,
+    "cumple_60": false
+  },
+  {
+    "id": "25771",
+    "avance": 20.2,
+    "cumple_60": false
+  },
+  {
+    "id": "25847",
+    "avance": 20.2,
+    "cumple_60": false
+  },
+  {
+    "id": "25859",
+    "avance": 20.2,
+    "cumple_60": false
+  },
+  {
+    "id": "25880",
+    "avance": 20.2,
+    "cumple_60": false
+  },
+  {
+    "id": "25975",
+    "avance": 20.2,
+    "cumple_60": false
+  },
+  {
+    "id": "26016",
+    "avance": 20.2,
+    "cumple_60": false
+  },
+  {
+    "id": "26045",
+    "avance": 20.2,
+    "cumple_60": false
+  },
+  {
+    "id": "26098",
+    "avance": 20.2,
+    "cumple_60": false
+  },
+  {
+    "id": "22485",
+    "avance": 19.95,
+    "cumple_60": false
+  },
+  {
+    "id": "24281",
+    "avance": 19.19,
+    "cumple_60": false
+  },
+  {
+    "id": "25629",
+    "avance": 18.69,
+    "cumple_60": false
+  },
+  {
+    "id": "25338",
+    "avance": 17.17,
+    "cumple_60": false
+  },
+  {
+    "id": "26065",
+    "avance": 16.92,
+    "cumple_60": false
+  },
+  {
+    "id": "23067",
+    "avance": 15.4,
+    "cumple_60": false
+  },
+  {
+    "id": "26147",
+    "avance": 14.14,
+    "cumple_60": false
+  },
+  {
+    "id": "23089",
+    "avance": 9.6,
+    "cumple_60": false
+  },
+  {
+    "id": "26454",
+    "avance": 4.8,
+    "cumple_60": false
+  }
+]
